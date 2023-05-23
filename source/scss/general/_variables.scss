@@ -1,6 +1,18 @@
 :root {
-    /* -- Fonts --*/
-  --font-family: "Mulish", sans-serif; // var(--font-family);
+  /* -- Fonts --*/
+  --font-family-gogol: "Gogol", sans-serif; // var(--font-family-gogol);
+  --font-family-neutralface: "NeutralFace", sans-serif; // var(--font-family-neutralface);
+  --font-family-manrope: "Manrope", sans-serif; // var(--font-family-manrope);
+
+  /* -- Colors --*/
+  --color-white: #fff; // var(--color-white);
+  --color-black: #000; // var(--color-black);
+  --color-gray: #333333; // var(--color-gray);
+  --color-gray-light: #F2F2F2; // var(--color-gray-light);
+  --color-corn-field: #F5FCCD; // var(--color-corn-field);
+  --color-middle-blue: #7F7DBE; // var(--color-middle-blue);
+  --color-pink: #FA9CCA; // var(--color-pink);
+  --color-buttermilk: #F8E5A4; // var(--color-buttermilk);
 
 
 }
