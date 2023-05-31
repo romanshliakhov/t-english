@@ -1,18 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-gogol);
-  font-size: 35px;
-  line-height: 35px;
-  color: var(--color-gray);
+  font-family: var(--font-family-manrope);
+  // font-size: 35px;
+  // line-height: 35px;
+  color: var(--color-dark-charcoal);
 }
 
 html {
   box-sizing: border-box;
+  height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 *,
@@ -111,25 +112,27 @@ input[type="number"] {
   appearance: textfield;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 svg {

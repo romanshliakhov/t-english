@@ -3,19 +3,133 @@
 @include('partials/head.html',{})
 
 <body>
-  @include('partials/header.html',{})
+  <div class="wrapper">
+    @include('partials/header.html',{})
 
-  <main class="main">
-    <section class="hero">
-      <div class="container">
-        <p>Привіт, я Таня</p>
-      </div>
-    </section>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <p>Привіт, я Таня</p>
+        </div>
+      </section>
 
-  </main>
+      <section class="about">
+        <div class="container">
+          <p>про мене</p>
+        </div>
+      </section>
 
-  @include('partials/footer.html',{})
+      <section class="services">
+        <div class="container">
+          <p>мої послуги</p>
+        </div>
+      </section>
 
+      <section class="subscribe">
+        <div class="container">
+          <p>підписуйтесь на інстаграм
+            та отримуйте безкоштовні
+            матеріали</p>
+        </div>
+      </section>
+
+      <section class="feedbacks">
+        <div class="container">
+          <p>що говорять мої учні?</p>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="faq__wrapp">
+            <h2 class="faq__title h2">Питання-відповіді:</h2>
+
+            <ul class="faq__questions" data-spollers data-one-spoller>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Як відбуваються уроки?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Чи є пробний урок?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Як оплачувати заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Де проходять заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Чи можна скасувати або перенести заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Заняття лише за підручником?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Якщо я хочу вивчати англійську за фільмами, як це працює?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>

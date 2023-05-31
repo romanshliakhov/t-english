@@ -3,15 +3,14 @@
 // ------------------------------- second level
 @import "general/fonts";
 @import "general/variables";
-
+@import "general/typography";
+@import "general/custom-icon";
 // ------------------------------- third level
 @import "general/swiper";
 
-
 // -----------------------------
 @import "general/global";
-@import "general/custom-icon";
-@import "general/typography";
+@import "general/components";
 @import "general/blocks";
 
 
