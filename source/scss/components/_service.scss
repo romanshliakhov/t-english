@@ -2,7 +2,7 @@
   height: 100%;
   border: 1.5px solid var(--color-middle-blue);
   border-radius: 20px;
-  padding: 45px 35px 0;
+  padding: clamp(30px, 2.344vw, 45px) clamp(20px, 1.823vw, 35px) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +10,10 @@
 
   &__info {
     flex-grow: 1;
+
+    @media screen and (max-width: 1240px) {
+      width: 100%;
+    }
   }
 
   &__count {
@@ -25,17 +29,19 @@
 
   &__title {
     margin-bottom: 15px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: clamp(18px, 1.389vw, 20px);
+    line-height: clamp(24px, 2.083vw, 30px);
     font-weight: 600;
     color: var(--color-dark-charcoal);
   }
 
   &__link {
+    position: relative;
     margin-bottom: -75px;
     text-align: center;
     color: var(--color-dark-charcoal);
     transition: all 0.4s ease;
+    z-index: 2;
 
     span {
       border: 1px solid transparent;

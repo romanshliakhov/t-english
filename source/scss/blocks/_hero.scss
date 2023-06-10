@@ -3,7 +3,7 @@
 
   &__wrapp {
     display: grid;
-    grid-template-columns: 1fr 560px;
+    grid-template-columns: 1fr clamp(485px, 45.161vw, 560px);
     align-items: flex-start;
   }
 
@@ -11,11 +11,19 @@
     padding-top: 150px;
     display: flex;
     flex-direction: column;
-    grid-gap: 85px;
+    grid-gap: clamp(40px, 5.903vw, 85px);
+
+    @media screen and (max-width: 1240px) {
+      grid-gap: 40px;
+    }
   }
 
   &__info {
     max-width: 490px;
+
+    @media screen and (max-width: 1240px) {
+      max-width: 420px;
+    }
   }
 
   &__info-head {
@@ -29,7 +37,9 @@
     margin-bottom: 30px;
     font-family: var(--font-family-neutralface);
     font-size: 45px;
-    line-height: 72px;
+    font-size: clamp(40px, 3.125vw, 45px);
+    line-height: clamp(60px, 5vw, 72px);
+    // line-height: 72px;
     text-transform: uppercase;
   }
 

@@ -5,8 +5,8 @@ body {
   width: 100%;
   position: relative;
   font-family: var(--font-family-manrope);
-  font-size: 18px;
-  line-height: 27px;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: clamp(24px, 1.875vw, 27px);
   color: var(--color-dark-charcoal);
 }
 
@@ -132,7 +132,7 @@ input[type="number"] {
   // max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding: 0 60px;
+  padding: 0 clamp(30px, 3.125vw, 60px);
 }
 
 svg {

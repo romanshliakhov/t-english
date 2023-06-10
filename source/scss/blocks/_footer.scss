@@ -1,5 +1,5 @@
 .footer {
-  padding: 55px 60px 85px;
+  padding: 55px clamp(30px, 3.125vw, 60px) clamp(55px, 4.427vw, 85px);
   display: flex;
   flex-direction: column;
   grid-gap: 25px;

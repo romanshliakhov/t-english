@@ -11,7 +11,11 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
+    grid-gap: clamp(15px, 2.083vw, 40px);
+
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__list-item {
